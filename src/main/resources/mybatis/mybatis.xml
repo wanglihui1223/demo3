@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>    
+  <settings>
+      <!-- oracle -->
+     <setting name="jdbcTypeForNull" value="NULL"/>
+     <!-- 如果不输出sql语句，就显示的配置  -->
+     <setting name="logImpl" value="LOG4J"/>
+  </settings>
+  <plugins>
+    <!-- 分页插件 -->
+    <plugin interceptor="com.github.pagehelper.PageHelper"/>
+  </plugins>
+	 
+</configuration>
