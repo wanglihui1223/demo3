@@ -20,4 +20,7 @@ public interface UserService {
   public boolean isExists(String name);
   
   public List<User> findUsers(UserDto userDto);
+  
+  public boolean delete(Integer id);
+
 }

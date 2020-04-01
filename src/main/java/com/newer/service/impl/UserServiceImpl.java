@@ -72,4 +72,10 @@ public class UserServiceImpl implements UserService {
 		return list;
 	}
 
+	@Override
+	public boolean delete(Integer id) {
+		// TODO Auto-generated method stub
+		return this.userDao.deleteByPrimaryKey(id)>0?true:false;
+	}
+
 }
